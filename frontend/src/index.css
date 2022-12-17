@@ -14,6 +14,7 @@
 body {
   background: #f1f1f1;
   font-family: "Poppins";
+  height: 100vh;
 }
 
 header {
@@ -45,6 +46,11 @@ header a {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 100px;
+}
+
+.workouts {
+  height: 90vh;
+  overflow: scroll;
 }
 
 .workout-details {
