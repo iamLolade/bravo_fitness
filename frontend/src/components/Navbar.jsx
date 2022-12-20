@@ -8,6 +8,12 @@ export default function Navbar() {
             <Link to='/'>
                 <h1>Bravo Fitness</h1>
             </Link>
+            <nav>
+              <div>
+                <Link to='/login'>Login</Link>
+                <Link to='/register'>Register</Link>
+              </div>
+            </nav>
         </div>
     </header>
   )
