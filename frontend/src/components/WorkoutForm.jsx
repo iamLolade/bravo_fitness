@@ -44,7 +44,7 @@ export default function WorkoutForm() {
             setTitle('')
             setLoad('')
             setReps('')
-            console.log('New workout added:', data)
+            // console.log('New workout added:', data)
             dispatch({ type: 'CREATE_WORKOUT', payload: data })
         }
     }

@@ -9,7 +9,6 @@ export default function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        // console.log(email, password)
         await register(email, password)
         setEmail('')
         setPassword('')
