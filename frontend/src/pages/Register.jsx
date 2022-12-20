@@ -11,7 +11,10 @@ export default function Register() {
 
         // console.log(email, password)
         await register(email, password)
+        setEmail('')
+        setPassword('')
     }
+    
     return (
         <form className='register' onSubmit={handleSubmit}>
             <h3>Register</h3>
