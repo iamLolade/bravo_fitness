@@ -10,8 +10,6 @@ export default function Register() {
         e.preventDefault()
 
         await register(email, password)
-        setEmail('')
-        setPassword('')
     }
     
     return (
@@ -21,11 +19,14 @@ export default function Register() {
             <label>Email address: </label>
             <input
                 type="email"
+                placeholder='johndoe@gmail.com'
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
             />
+            <label>Password: </label>
             <input
                 type="password"
+                placeholder='password'
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
             />

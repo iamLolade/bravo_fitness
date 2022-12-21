@@ -10,8 +10,6 @@ export default function Login() {
         e.preventDefault()
         
         await login(email, password)
-        setEmail('')
-        setPassword('')
     }
     
     return (
@@ -21,11 +19,14 @@ export default function Login() {
             <label>Email address: </label>
             <input
                 type="email"
+                placeholder='johndoe@gmail.com'
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
             />
+            <label>Password: </label>
             <input
                 type="password"
+                placeholder='password'
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
             />
